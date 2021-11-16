@@ -1,0 +1,38 @@
+.new-tweet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+form {
+  width: 100%;
+  vertical-align: bottom;
+}
+input {
+  width: 100%;
+  background: none;
+  outline: none; 
+  border:none;
+  border-bottom: 3px solid black;
+  padding-top: 25px;
+}
+
+.new-tweet div {
+  display: flex;
+  justify-content: space-between;
+}
+.new-tweet output {
+  display: flex; 
+  justify-content: flex-start;
+}
+.new-tweet button {
+  display: flex; 
+  justify-content: flex-end;
+  color:rgb(7, 62, 52); 
+  background-color: rgb(20, 145, 122);
+}
+
+.new-tweet button i {
+    padding-right: 5px;
+    color: rgb(13, 87, 76);
+}

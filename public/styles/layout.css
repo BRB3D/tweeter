@@ -15,16 +15,23 @@
  */
 
 body {
+  display: flex;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .container{
+  padding-top: 20px;;
+  display: flex; 
   width: 90%;
   background-color: #f4f1ec;
-  margin:auto;
+  justify-content: center;
+  align-items: center;
 }
 
 
