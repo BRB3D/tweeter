@@ -4,22 +4,29 @@
   height: 520px;
   width:100%;
   background-color: rgb(167, 174, 26);
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   background-image: url("/images/kiwi.png"), url("https://www.transparenttextures.com/patterns/tree-bark.png");
   background-repeat: no-repeat, repeat;
-  background-attachment: fixed;
-  background-position:bottom 70% left 2%;
-  background-size: 35%;
+  background-attachment: inherit;
+  background-position:bottom 14% left 2%;
+  background-size: 380px;
   z-index: 0;
 }
 .avatar {
+  display:flex;
   margin-top: 120px;
   height: 75%;
+  width: auto;
+  opacity: .83;
 }
 
 #header .name {
+  display:flex;
   color: white; 
   margin-top: 0;
+  opacity: .82;
+}
+#header .name h2 {
+  text-shadow: 2px 2px rgb(7, 62, 52);
 }
