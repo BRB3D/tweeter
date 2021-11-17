@@ -8,12 +8,12 @@ form {
   width: 100%;
   vertical-align: bottom;
 }
-input {
+textarea {
   width: 100%;
   background: none;
   outline: none; 
   border:none;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid rgb(7, 62, 52);
   padding-top: 25px;
 }
 
@@ -35,4 +35,10 @@ input {
 .new-tweet button i {
     padding-right: 5px;
     color: rgb(13, 87, 76);
+}
+.new-tweet output {
+  color: rgb(7, 62, 52);
+}
+.new-tweet .red-counter {
+  color:crimson;
 }

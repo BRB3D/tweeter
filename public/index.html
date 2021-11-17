@@ -27,6 +27,7 @@ font-family: 'Source Sans Pro', sans-serif; -->
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
@@ -53,10 +54,10 @@ font-family: 'Source Sans Pro', sans-serif; -->
     <main class="container">
       <section class="new-tweet">
         <form method="POST" action="/tweets">
-          <input placeholder="What are you humming about?" name="text" id="tweet-text"></input>
+          <textarea rows="1" placeholder="What are you humming about?" name="text" id="tweet-text"></textarea>
           <div>
             <button type="submit"><i class="fas fa-kiwi-bird"></i>              KiWi</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+            <output name="counter" class="counter " for="tweet-text">140</output>
           </div>
         </form>
       </section>
