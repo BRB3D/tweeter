@@ -48,3 +48,14 @@ textarea {
 .new-tweet .red-counter {
   color:crimson;
 }
+/* ------------------------- Hover Animation ----------------------------- */
+
+.new-tweet button:hover {
+  color:rgb(7, 92, 52); 
+  background-color: rgb(20, 175, 122);
+}
+
+.new-tweet button i:hover {
+    padding-right: 5px;
+    color: rgb(13, 117, 76);
+}
