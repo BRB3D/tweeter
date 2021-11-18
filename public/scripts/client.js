@@ -6,35 +6,42 @@
 
 $(function() {
   console.log( "ready!" );
+/* ----------function that renders with a GET request */
+  const loadTweets = function() {
+    $.get('/tweets')
+    .then(function(data) {
+      renderTweets(data, createTweetElement);
+    })
+  } 
+  /* ----------------Submits request/posts to tweeter ----------- */
+    const $form = $('form');
+    $form.on('submit', function (event) {
+      event.preventDefault()
+      console.log(event)
+      if (event.target['tweet-text'].value === '') {
+        return alert('the message is empty');
+      }
+      if(event.target['tweet-text'].value.length > 140) {
+        return alert('Kiwis can only send 140 characters, please be more concise');
+      }
+      const value = $(event.target['tweet-text']).serialize();
+      console.log(value); 
+      $.post('/tweets', value)
+      .then(function (value) {
+        loadTweets();
+      });
 
-  const tweetData =[
-    {
-      "user": {
-        "name": "Newton",
-        "avatars": "https://i.imgur.com/73hZDYK.png"
-        ,
-        "handle": "@SirIsaac"
-      },
-      "content": {
-        "text": "If I have seen further it is by standing on the shoulders of giants"
-      },
-      "created_at": 1461116232227
-    },
-    {
-      "user": {
-        "name": "Descartes",
-        "avatars": "https://i.imgur.com/nlhLi3I.png",
-        "handle": "@rd" },
-      "content": {
-        "text": "Je pense , donc je suis"
-      },
-      "created_at": 1461113959088
-    }
-  ]
 
 
-  /* console.log($tweet); // to see what it looks like */
-  renderTweets(tweetData, createTweetElement);
+    });
+    
+    loadTweets();
+
+
+
+
+
+
 });
 
 
@@ -43,15 +50,15 @@ const createTweetElement = function(tweetObj) {
     <header>
       <div class="left">
         <img src="${tweetObj.user.avatars}">
-        <h2>${tweetObj.user.name}</h2>
+        <h2>${escape(tweetObj.user.name)}</h2>
       </div>
-      <h2>${tweetObj.user.handle}</h2>
+      <h2>${escape(tweetObj.user.handle)}</h2>
     </header>
     <div class="content">
-      <p>${tweetObj.content.text}</p>
+      <p>${escape(tweetObj.content.text)}</p>
     </div>
     <footer>
-      <p>${timeago.format(tweetObj.created_at)}</p>
+      <p>${timeago.format(escape(tweetObj.created_at))}</p>
       <div class="icon">
         <i class="fab fa-canadian-maple-leaf"></i>
         <i class="fas fa-retweet"></i>
@@ -64,6 +71,6 @@ const createTweetElement = function(tweetObj) {
 const renderTweets = function(data, callback) {
   for (let tweets of data) {
     const $tweet = callback(tweets);
-    $('#tweets-container').append($tweet);
+    $('#tweets-container').prepend($tweet);
   }
 }
