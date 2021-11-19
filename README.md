@@ -9,6 +9,18 @@ This repository is a practice LHL project that helps build  HTML, CSS, JS, jQuer
   4. Newest messages will be displayed first. 
 
 
+## Preview
+
+
+
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+
+
+
 ## Getting Started
 
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.

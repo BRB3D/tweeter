@@ -17,9 +17,10 @@
 body {
   display: flex;
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: #f4d2a0;
   font-size: 24px;
   font-family: 'Source Sans Pro', sans-serif;
+  background-image: url("https://www.transparenttextures.com/patterns/xv.png") ;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -31,11 +32,12 @@ body {
   position: relative;
   display: flex;
   width: 90%;
-  background-color: #f4f1ec;
+  background-color: rgb(244, 241, 236, .75);
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
   z-index: 0;
+  opacity: .80;
 }
 
 
