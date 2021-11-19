@@ -13,11 +13,11 @@ This repository is a practice LHL project that helps build  HTML, CSS, JS, jQuer
 
 
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+!["Some animations including empty error and icons"](https://github.com/BRB3D/tweeter/blob/master/public/media/animations.gif?raw=true)
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+!["Handling over 140 character error"](https://github.com/BRB3D/tweeter/blob/master/public/media/error.gif?raw=true)
 
-![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+!["Responsive design"](https://github.com/BRB3D/tweeter/blob/master/public/media/responsive.gif?raw=true)
 
 
 
