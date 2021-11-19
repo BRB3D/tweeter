@@ -9,15 +9,17 @@
   padding: 5px 20px;
   z-index: 0;
 }
+
 form {
   width: 100%;
   vertical-align: bottom;
 }
+
 textarea {
   width: 100%;
   background: none;
-  outline: none; 
-  border:none;
+  outline: none;
+  border: none;
   border-bottom: 3px solid rgb(7, 62, 52);
   padding-top: 25px;
   resize: none;
@@ -28,14 +30,16 @@ textarea {
   justify-content: space-between;
   margin-top: 10px
 }
+
 .new-tweet output {
-  display: flex; 
+  display: flex;
   justify-content: flex-start;
 }
+
 .new-tweet button {
   display: flex; 
   justify-content: flex-end;
-  color:rgb(7, 62, 52); 
+  color: rgb(7, 62, 52); 
   background-color: rgb(20, 145, 122);
 }
 
@@ -43,11 +47,13 @@ textarea {
   padding-right: 5px;
   color: rgb(13, 87, 76);
 }
+
 .new-tweet output {
   color: rgb(7, 62, 52);
 }
+
 .new-tweet .red-counter {
-  color:crimson;
+  color: crimson;
 }
 
 .error {
@@ -57,19 +63,14 @@ textarea {
   height: 15%;
   margin: 0;
   padding: 0;
-  font-size: 3vh;
+  font-size: 1.5rem;
   align-items: flex-start;
   justify-content: center;
+  margin-bottom: 30px;
 }
 /* ------------------------- Hover Animation ----------------------------- */
 
 .new-tweet button:hover {
-  color:rgb(13, 117, 76); 
+  color: rgb(13, 117, 76);
   background-color: rgb(20, 175, 122);
 }
-
-
-/* .new-tweet button i:hover {
-    padding-right: 5px;
-    color: rgb(13, 117, 76);
-} */

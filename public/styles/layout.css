@@ -25,10 +25,11 @@ body {
   flex-direction: column;
 }
 
+
 .container{
-  padding-top: 20px;;
+  padding-top: 20px;
   position: relative;
-  display: flex; 
+  display: flex;
   width: 90%;
   background-color: #f4f1ec;
   align-items: center;
@@ -39,5 +40,18 @@ body {
 
 
 /*
- * Additional CSS can be defined below or in other CSS files, as per instructions
+ * Desktop responsive design
  */
+
+@media only screen and (min-width: 1024px) {
+  body{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .container {
+    padding-top: 120px;
+    width: 50%
+  }
+}

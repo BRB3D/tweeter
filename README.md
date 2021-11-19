@@ -1,8 +1,13 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+KiWi is a simple, single-page Twitter clone.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+This repository is a practice LHL project that helps build  HTML, CSS, JS, jQuery and AJAX, Node, and Express back-end skills.
+  1. Provides random user in order to write Kiwis. 
+  2. Responsive design adapted for desktop and tablet, since Kiwis dont have hands we are not adapting them for phone use 😎; 
+  3. Kiwis can only type 140 characters and they dont like to send empty messages, therefore when that happens an error pops up. Dont worry if you see it, you can just click back in the text input and you can start over or start typing. Also for the useres convenience when more than 140 characters are type we will erase so you can start over. 
+  4. Newest messages will be displayed first. 
+
 
 ## Getting Started
 

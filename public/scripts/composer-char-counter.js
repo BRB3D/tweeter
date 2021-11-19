@@ -1,10 +1,6 @@
+/* Updates character counter */
 
 $(document).ready(function() {
-
-
-
-
-
   $("#tweet-text").on('keyup', function(event) {
     const count = this.value.length;
     const element = $(".counter");
